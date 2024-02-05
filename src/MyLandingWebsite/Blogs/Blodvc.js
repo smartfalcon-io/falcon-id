@@ -6,6 +6,9 @@ import image from "../images/blogs/vc.svg"
 import Header from "MyLandingWebsite/components/header/MainHeader";
 import Footer from "../components/footer/Fivecolumndark";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 export default () => {
 const custom={
   title: [
@@ -57,7 +60,10 @@ const custom={
       "In conclusion, Verifiable Credentials represent a transformative leap into a more secure, private, and user-centric digital identity landscape. This evolution signifies a departure from traditional approaches, offering individuals a trustworthy and decentralized solution.",
       "Verifiable Credentials are not merely a technological innovation; they embody a commitment to reshaping digital trust and identity verification for a more inclusive and secure future. As we embrace this digital evolution, Verifiable Credentials stand as a beacon of progress, ensuring a more reliable and user-friendly digital identity experience for everyone.",
     ]
-}
+};
+useEffect(() =>{
+  ReactGA.send({ hitType: "pageview", page: "/blogs/vc", title: "Verfiablecredential Blog" })
+},[]);
 
   return (
     <AnimationRevealPage>

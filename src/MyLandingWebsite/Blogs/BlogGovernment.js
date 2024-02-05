@@ -6,6 +6,9 @@ import image from "../images/blogs/gov.svg"
 import Header from "MyLandingWebsite/components/header/MainHeader";
 import Footer from "../components/footer/Fivecolumndark";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 export default () => {
 const custom={
   title: [
@@ -70,7 +73,10 @@ const custom={
       "As we delve into the profound implications of decentralized governance within the SSI framework, it becomes clear that this is more than a technological upgrade; it's a societal shift. It is a testament to the belief that individuals and communities should play a pivotal role in defining their own digital identities.",
       "The journey towards decentralized governance with SSI not only reinforces the principles of self-sovereignty but also sets the stage for a more responsive, adaptable, and equitable government identity ecosystem. It is a journey toward a future where citizens actively contribute to and co-create the standards that govern their digital interactions with the government, fostering a deeper sense of trust, engagement, and collective responsibility."
     ]
-}
+};
+useEffect(() =>{
+  ReactGA.send({ hitType: "pageview", page: "/blogs/gov", title: "Government services Blog" })
+},[]);
 
   return (
     <AnimationRevealPage>

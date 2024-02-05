@@ -6,6 +6,9 @@ import image from "../images/blogs/did.svg"
 import Header from "MyLandingWebsite/components/header/MainHeader";
 import Footer from "../components/footer/Fivecolumndark";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 export default () => {
 const custom={
   title: [
@@ -58,7 +61,10 @@ const custom={
       "As we stand at the crossroads of this transformative journey, one thing is clear – Decentralized Identity is not just a concept; it's a catalyst for a more secure, private, and user-controlled online experience. Step into the future of identity – decentralized, secure, and truly yours.",
       
     ]
-}
+};
+useEffect(() =>{
+  ReactGA.send({ hitType: "pageview", page: "/blogs/did", title: "Decentralized Identity Blog" })
+},[]);
 
   return (
     <AnimationRevealPage>

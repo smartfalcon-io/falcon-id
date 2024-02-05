@@ -17,6 +17,9 @@ import i8 from "../images/Educationusecase/8.svg"
 import i9 from "../images/Educationusecase/9.svg"
 import UsecaseFeature from "MyLandingWebsite/components/features/UsecaseFeature";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 export default () => {
    const customposts = [
     {
@@ -79,6 +82,9 @@ const customBackground = {
   backgroundColor: "#FFFFFF",
   backgroundImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23a273ff' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%235a13e6' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%239f6eff' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%235412d6' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%239c6aff' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%234e11c7' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%239965ff' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%234810b7' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%239660ff' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23420ea8' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23935bff' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%233c0d99' points='943 900 1210 900 971 687'/%3E%3C/svg%3E",
 };
+useEffect(() =>{
+  ReactGA.send({ hitType: "pageview", page: "/usecases/education", title: "Education Usecase" })
+},[]);
   return (
     <AnimationRevealPage>
       <Header />

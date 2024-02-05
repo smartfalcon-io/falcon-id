@@ -134,7 +134,7 @@ import Blogssi from "MyLandingWebsite/Blogs/Blogssi";
 
 
 import ReactGA from "react-ga4";
-const ga4react = ReactGA.initialize("G-SG6BM339GT");
+const ga4react = ReactGA.initialize("G-CGBYXCQBWN");
 
 
 

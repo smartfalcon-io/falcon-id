@@ -16,6 +16,9 @@ import i7 from "../images/Farmerusecase/7.svg";
 import i8 from "../images/Farmerusecase/8.svg";
 import i9 from "../images/Farmerusecase/9.svg";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 
 export default () => {
   const  Customposts = [
@@ -80,6 +83,10 @@ const customBackground = {
   backgroundColor: "#3C0D99",
   backgroundImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='46' height='46' fill-opacity='0.6' fill='%23A273FF'/%3E%3C/svg%3E",
 };
+
+useEffect(() =>{
+  ReactGA.send({ hitType: "pageview", page: "/usecases/farmer", title: "Farmern Usecase" })
+},[]);
 
   return (
     <AnimationRevealPage>

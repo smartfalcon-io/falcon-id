@@ -6,6 +6,9 @@ import image from "../images/blogs/ssi.svg"
 import Header from "MyLandingWebsite/components/header/MainHeader";
 import Footer from "../components/footer/Fivecolumndark";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 export default () => {
 const custom={
   title: [
@@ -72,7 +75,10 @@ const custom={
       "It's an invitation to envision a future where individuals have greater control over their digital identities, marking a monumental step towards a more inclusive and empowering digital era."
 
     ]
-}
+};
+useEffect(() =>{
+  ReactGA.send({ hitType: "pageview", page: "/blogs/ssi", title: "Self Soverign Identity Blog" })
+},[]);
 
   return (
     <AnimationRevealPage>
