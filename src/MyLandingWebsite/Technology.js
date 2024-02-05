@@ -14,8 +14,15 @@ import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
+
+  useEffect(() =>{
+    ReactGA.send({ hitType: "pageview", page: "/technology", title: "Technology Page" })
+  },[]);
   return (
     <AnimationRevealPage>
       <Header />

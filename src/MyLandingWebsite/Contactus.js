@@ -9,6 +9,9 @@ import Contactusform from "./components/forms/Contactusform";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
 import HubspotContactForm from "./components/hubspot/Contactform.js";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;
 const Email = tw.span`text-sm mt-6 block text-gray-500`;
@@ -18,6 +21,9 @@ const Mainheader = tw(Header)`bg-black`
 
 
 export default () => {
+  useEffect(() =>{
+    ReactGA.send({ hitType: "pageview", page: "/contactus", title: "ContactUs Page" })
+  },[]);
   return (
     <AnimationRevealPage>
       <Mainheader/>

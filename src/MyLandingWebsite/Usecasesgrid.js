@@ -9,6 +9,9 @@ import Footer from "./components/footer/Fivecolumndark";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-white`;
 const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
@@ -100,6 +103,10 @@ export default ({
   const onLoadMoreClick = () => {
     setVisible(v => v + 6);
   };
+
+  useEffect(() =>{
+    ReactGA.send({ hitType: "pageview", page: "/usecase", title: "USecase Page" })
+  },[]);
   return (
     <AnimationRevealPage>
       <Header />

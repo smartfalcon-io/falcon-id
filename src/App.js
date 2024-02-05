@@ -132,24 +132,13 @@ import Blogvc from "MyLandingWebsite/Blogs/Blodvc";
 import BlogGov from "MyLandingWebsite/Blogs/BlogGovernment";
 import Blogssi from "MyLandingWebsite/Blogs/Blogssi";
 
-import { useLocation } from "react-router";
-import trackPathForAnalytics from "MyLandingWebsite/components/analytics/Trackanalytics";
-import { useEffect,useCallback } from "react";
+
+import ReactGA from "react-ga4";
+const ga4react = ReactGA.initialize("G-SG6BM339GT");
 
 
 
 export default function App() {
-  // const { pathname, search } = useLocation();
-
-  //   const analytics = useCallback(() => {
-  //       trackPathForAnalytics({ path: pathname, search: search, title: pathname.split("/")[1] });
-  //   }, [pathname, search]);
-	
-  //   useEffect(() => {
-  //       analytics();
-  //   }, [analytics]);
-  
-
   return (
     <>
       <GlobalStyles />

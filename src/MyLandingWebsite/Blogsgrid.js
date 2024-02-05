@@ -9,6 +9,9 @@ import Footer from "./components/footer/Fivecolumndark";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 
+import ReactGA from "react-ga4";
+
+
 import image from "./images/did.png"
 
 const Container =  styled.div`
@@ -106,6 +109,10 @@ export default ({
   // const [loading, setLoading] = useState(true); 
   const [blog,setBlog] = useState(null)
   const [error, setError] = useState(null);
+
+  useEffect(() =>{
+    ReactGA.send({ hitType: "pageview", page: "/blogs", title: "Blogs Page" })
+  },[]);
 
 
   // useEffect(() => {

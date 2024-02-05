@@ -7,6 +7,9 @@ import Header from "./components/header/MainHeader.js";
 import Footer from "./components/footer/Fivecolumndark.js";
 import Contactusform from "./components/forms/TrydemoContact";
 
+import ReactGA from "react-ga4";
+
+
 import { Fragment } from 'react'
 
 const Mainheader = tw(Header)`bg-black`
@@ -15,6 +18,9 @@ const Mainheader = tw(Header)`bg-black`
 
 
 export default () => {
+  useEffect(() =>{
+    ReactGA.send({ hitType: "pageview", page: "/getcontact", title: "GetContact Page" })
+  },[]);
   return (
     <AnimationRevealPage>
       <Mainheader />

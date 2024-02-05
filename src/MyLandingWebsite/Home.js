@@ -22,12 +22,20 @@ import icon4 from "./images/privacy.svg"
 import icon5 from "./images/user.svg"
 import icon6 from "./images/trust.svg"
 
+import ReactGA from "react-ga4";
+import { useEffect } from "react";
+
 
 export default () =>{
     const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
+  useEffect(() =>{
+    ReactGA.send({ hitType: "pageview", page: "/home", title: "Home Page" })
+  },[]);
+
+
   return(
     <AnimationRevealPage>
         {/* <FinalHeader/> */}
