@@ -55,46 +55,12 @@ export default ({
   formAction = "https://ssidemo.smartfalcon.io/",
   formMethod = "get",
   textOnLeft = true,
+  hubspotformid = "",
   videourl="https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2Ffarmer_usecase.mp4"
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
-  const [formData, setFormData] = useState({
-    email: "",
-    name: "",
-    phoneNumber: "",
-    companyName: "",
-  });
-const [showPopUp, setShowPopUp] = useState(false);
-const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Add your validation logic here
-    // For simplicity, this example checks if all fields are non-empty
-    const isValid = Object.values(formData).every((value) => value.trim() !== "");
-
-    if (isValid) {
-      // If validation passes, you can submit the form
-      const form = e.target;
-      form.submit();
-    } else {
-      // Handle validation errors, display messages, etc.
-       setShowPopUp(true);
-    //   alert("please fill all fields")
-    }
-  };
-
-const closePopUp = () => {
-    setShowPopUp(false);
-  };
+  
 
 
   return (
@@ -122,7 +88,7 @@ const closePopUp = () => {
             <HubspotContactForm
                   region="na1"
                   portalId="44235887"
-                  formId="b2504fa9-a511-4700-afb1-5e70004d2fb5"/>
+                  formId= {hubspotformid}/>
             </Form>
             {/* <HubspotContactForm
                   region="na1"
@@ -131,15 +97,6 @@ const closePopUp = () => {
           </TextContent>
         </TextColumn>
       </TwoColumn>
-      {/* Custom Pop-Up */}
-      {showPopUp && (
-        <CustomPopUp>
-          <PopUpContent>
-            <p>Please fill in all fields</p>
-            <ColorButton onClick={closePopUp}>Close</ColorButton>  
-          </PopUpContent>
-        </CustomPopUp>
-      )}
     </Container>
   );
 };

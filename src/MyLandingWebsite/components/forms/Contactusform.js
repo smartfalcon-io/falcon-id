@@ -38,15 +38,15 @@ const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-m
 const Textarea = styled(Input).attrs({as: "textarea"})`
   ${tw`h-24`}
 `
+const SubmitButton = tw.button`backdrop-blur-3xl backdrop-brightness-75  backdrop-opacity-25 border-black border px-8 py-3 font-bold rounded transition duration-300 bg-primary-500 shadow text-black hocus:bg-primary-500 hocus:text-gray-900`;
 
-const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8 bg-black `
 
 export default ({
   subheading = "Contact Us",
-  heading = <>Feel free to <span tw="text-white">get in touch</span><wbr/> with us.</>,
-  description = "For more information about Smartfalcon, get in touch with us and we assure you that all your queries will be taken care of.",
-  submitButtonText = "Send",
-  formAction = "#",
+  heading = <>Get <span tw="text-white">connect</span><wbr/> with us.</>,
+  description = "For more information about Smartfalcon,schedule a meet to get connect with us and we assure you that all your queries will be taken care of.",
+  submitButtonText = "Schedule a Meet",
+  formAction = "https://calendly.com/contact-falcon/30min",
   formMethod = "get",
   textOnLeft = true,
 }) => {
@@ -63,17 +63,17 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
-            {/* <Form action={formAction} method={formMethod}>
-              <Input type="email" name="email" placeholder="Your Email Address" />
+            <Form action={formAction} method={formMethod}>
+              {/* <Input type="email" name="email" placeholder="Your Email Address" />
               <Input type="text" name="name" placeholder="Full Name" />
               <Input type="text" name="subject" placeholder="Subject" />
-              <Textarea name="message" placeholder="Your Message Here" />
-              <SubmitButton type="submit">{submitButtonText}</SubmitButton>
-            </Form> */}
-                <HubspotContactForm
+              <Textarea name="message" placeholder="Your Message Here" /> */}
+              <SubmitButton  type="submit">{submitButtonText}</SubmitButton>
+            </Form>
+                {/* <HubspotContactForm
                   region="na1"
                   portalId="44235887"
-                  formId="b2504fa9-a511-4700-afb1-5e70004d2fb5"/>
+                  formId="b2504fa9-a511-4700-afb1-5e70004d2fb5"/> */}
           </TextContent>
         </TextColumn>
       </TwoColumn>
