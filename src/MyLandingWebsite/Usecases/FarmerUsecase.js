@@ -79,6 +79,8 @@ export default () => {
   
 ];
 
+const hubspotformid = "f45d2a3f-b106-41ea-ab40-28926be1590c"
+
 const customBackground = {
   backgroundColor: "#3C0D99",
   backgroundImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='46' height='46' fill-opacity='0.6' fill='%23A273FF'/%3E%3C/svg%3E",
@@ -98,7 +100,7 @@ useEffect(() =>{
         imageSrc="https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2Fucfarmerusecase.png"
       />
       <UsecaseFeature posts ={Customposts} background={customBackground}/>
-      <TrydemoContact/>
+      <TrydemoContact hubspotformid={hubspotformid}/>
       <Footer />
     </AnimationRevealPage>
   );

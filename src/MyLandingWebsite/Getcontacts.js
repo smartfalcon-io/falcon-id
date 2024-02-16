@@ -17,14 +17,17 @@ const Mainheader = tw(Header)`bg-black`
 // const hubspotcontactusform = '<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script><script>  hbspt.forms.create({    region: "na1", portalId: "44235887",   formId: "b2504fa9-a511-4700-afb1-5e70004d2fb5" });</script>';
 
 
-export default () => {
+export default ({
+  hubspotformid="b2504fa9-a511-4700-afb1-5e70004d2fb5"
+}) => {
+
   useEffect(() =>{
     ReactGA.send({ hitType: "pageview", page: "/getcontact", title: "GetContact Page" })
   },[]);
   return (
     <AnimationRevealPage>
       <Mainheader />
-      <Contactusform />
+      <Contactusform  hubspotformid={hubspotformid} />
       <Footer />
     </AnimationRevealPage>
   );
