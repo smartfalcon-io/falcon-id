@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "../../../components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "../../../components/misc/Buttons";
-import EmailIllustrationSrc from "../../../images/email-illustration.svg";
+import EmailIllustrationSrc from "../../images/Schedule-illustration.svg";
 import HubspotContactForm from "../hubspot/Contactform.js";
 
 
@@ -26,7 +26,7 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 const Container =  styled.div`
 ${tw`relative -mx-8 -mt-8 bg-center bg-cover `}
 background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%233C0D99' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23A273FF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%239f6fff' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%239c6aff' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%239966ff' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%239561ff' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23925dff' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%238f58ff' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%238b53ff' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23884eff' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%238449ff' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%238144ff' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%237d3fff' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23793aff' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%237534ff' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23712dff' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%236d27ff' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23691fff' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%236415FF' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");`;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%230082BA' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%2317B8FF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%2316b6fd' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%2315b5fc' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%2314b3fa' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%2313b2f8' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2311b0f7' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2310aff5' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%230fadf3' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%230dacf2' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%230caaf0' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%230ba9ef' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2309a7ed' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2307a6eb' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2306a4ea' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2304a3e8' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2303a1e6' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%2301a0e5' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23009EE3' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");`;
 
 
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;

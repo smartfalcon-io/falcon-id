@@ -82,8 +82,8 @@ export default () => {
 const hubspotformid = "f45d2a3f-b106-41ea-ab40-28926be1590c"
 
 const customBackground = {
-  backgroundColor: "#3C0D99",
-  backgroundImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='46' height='46' fill-opacity='0.6' fill='%23A273FF'/%3E%3C/svg%3E",
+  backgroundColor: "#ffffff",
+  backgroundImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2317B8FF'/%3E%3Cstop offset='1' stop-color='%23009EE3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E",
 };
 
 useEffect(() =>{
