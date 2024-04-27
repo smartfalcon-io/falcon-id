@@ -23,13 +23,13 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  * separately
  */
 
-import Hero1 from "components/hero/TwoColumnWithVideo.js";
-import Hero2 from "components/hero/TwoColumnWithInput.js";
-import Hero3 from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
-import Hero4 from "components/hero/TwoColumnWithPrimaryBackground.js";
-import Hero5 from "components/hero/FullWidthWithImage.js";
-import Hero6 from "components/hero/BackgroundAsImage.js";
-import Hero7 from "components/hero/BackgroundAsImageWithCenteredContent.js";
+// import Hero1 from "components/hero/TwoColumnWithVideo.js";
+// import Hero2 from "components/hero/TwoColumnWithInput.js";
+// import Hero3 from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
+// import Hero4 from "components/hero/TwoColumnWithPrimaryBackground.js";
+// import Hero5 from "components/hero/FullWidthWithImage.js";
+// import Hero6 from "components/hero/BackgroundAsImage.js";
+// import Hero7 from "components/hero/BackgroundAsImageWithCenteredContent.js";
 
 // import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
@@ -116,7 +116,7 @@ import Hero7 from "components/hero/BackgroundAsImageWithCenteredContent.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contactus from "MyLandingWebsite/Contactus";
 import Home from "MyLandingWebsite/Home";
-import Getcontacts from "MyLandingWebsite/Getcontacts";
+import Trydemocontacts from "MyLandingWebsite/TrydemoContact";
 import Blogsgrid from "MyLandingWebsite/Blogsgrid"
 import Usecases from "MyLandingWebsite/Usecasesgrid"
 import Technology from "MyLandingWebsite/Technology";
@@ -145,7 +145,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/trydemo" element={<Getcontacts/>} />
+          <Route path="/trydemo" element={<Trydemocontacts/>} />
           <Route path="/technology" element={<Technology/>} /> 
           {/* usecases */}
           <Route path="/usecases" element={<Usecases />}/>

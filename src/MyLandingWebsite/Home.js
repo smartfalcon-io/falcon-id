@@ -15,12 +15,12 @@ import Faq from "./components/faq/Singlecolumnwithbackground.js"
 import Footer from "./components/footer/Fivecolumndark.js"
 
 import image from "./images/did.png"
-import icon1 from "./images/ownership.svg"
-import icon2 from "./images/securitys.svg"
-import icon3 from "./images/seamless.svg"
-import icon4 from "./images/privacy.svg"
-import icon5 from "./images/user.svg"
-import icon6 from "./images/trust.svg"
+import icon1 from "./images/ownership.png"
+import icon2 from "./images/securitys.png"
+import icon3 from "./images/seamless.png"
+import icon4 from "./images/privacy1.png"
+import icon5 from "./images/user.png"
+import icon6 from "./images/trust1.png"
 
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
