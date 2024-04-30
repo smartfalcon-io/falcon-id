@@ -144,7 +144,7 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/falcon-id" element={<Home/>} />
           <Route path="/trydemo" element={<Trydemocontacts/>} />
           <Route path="/technology" element={<Technology/>} /> 
           {/* usecases */}
