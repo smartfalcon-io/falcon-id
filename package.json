@@ -11,6 +11,7 @@
     "react": "^18.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.0.0",
+    "react-ga4": "2.1.0",
     "react-github-btn": "^1.4.0",
     "react-helmet": "^6.1.0",
     "react-modal": "^3.15.0",
@@ -21,15 +22,16 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5",
     "tailwindcss": "^3.0.0",
-    "twin.macro": "^3.0.0-rc.4",
-    "react-ga4":"2.1.0"
+    "twin.macro": "^3.0.0-rc.4"
   },
   "scripts": {
+    "predeploy" : "npm run build",
+     "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && netlify deploy --prod --dir=build"
+    "netlifydeploy": "yarn build && netlify deploy --prod --dir=build"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -55,5 +57,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
