@@ -24,7 +24,7 @@ const custom={
       {
         beforelink:"SSI acts as a safeguard, offering citizens a secure and easily ",  
         linkword:"verifiable digital identity",
-        link:"/blogs/vc",
+        link:"/falcon-id/blogs/vc",
         afterlink:" for all their government-related transactions. This blog will delve into the myriad advantages and features of SSI, highlighting its transformative impact on government operations."
         },
     ],
@@ -33,7 +33,7 @@ const custom={
         {
             beforelink:"One of the standout features of SSI is its commitment to giving citizens control over their data through ",  
             linkword:"decentralized identity",
-            link:"/blogs/did",
+            link:"/falcon-id/blogs/did",
             afterlink:". Imagine having a digital key to your government credentials, where you decide when and how your information is shared. SSI empowers individuals by putting them in the driver's seat of their own data, fostering a sense of privacy and control that traditional systems lack."
             },
       "This paradigm shift ensures that citizens are active participants in managing their identities, reducing the chances of unauthorized access or misuse. SSI is not just a technological innovation; it's a powerful tool for citizens to exercise their rights and make informed choices about the dissemination of their personal information.",
@@ -44,7 +44,7 @@ const custom={
       {
         beforelink:" ",  
         linkword:"Self-Sovereign Identity",
-        link:"/blogs/ssi",
+        link:"/falcon-id/blogs/ssi",
         afterlink:" minimizes the hassle associated with traditional methods, fostering an environment where citizens can engage with government services seamlessly. The result is a win-win situation where both citizens and government agencies benefit from improved efficiency and transparency."
         },
       "Trustworthy governance relies on a verifiable and unalterable record of transactions. SSI plays a pivotal role in providing an immutable history log of government interactions. Think of it as a digital ledger that promotes accountability and integrity in dealings with public services.",
