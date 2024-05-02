@@ -85,7 +85,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href="/">
+    <LogoLink href="/falcon-id">
       <img src={logo} alt="logo" />
       Falcon ID
     </LogoLink>

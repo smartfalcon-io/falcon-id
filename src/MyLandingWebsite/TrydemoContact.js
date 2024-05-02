@@ -22,7 +22,7 @@ export default ({
 }) => {
 
   useEffect(() =>{
-    ReactGA.send({ hitType: "pageview", page: "/getcontact", title: "GetContact Page" })
+    ReactGA.send({ hitType: "pageview", page: "/falcon-id/getcontact", title: "GetContact Page" })
   },[]);
   return (
     <AnimationRevealPage>

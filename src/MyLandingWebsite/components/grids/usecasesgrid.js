@@ -37,6 +37,7 @@ const ControlButton = styled(PrimaryButtonBase)`
 const PrevButton = tw(ControlButton)``;
 const NextButton = tw(ControlButton)``;
 
+
 const CardSlider = styled(Slider)`
   ${tw`mt-16`}
   .slick-track { 
@@ -78,6 +79,10 @@ const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
 
 
 const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-4xl py-3 sm:py-6`;
+
+const Link = styled(PrimaryButton).attrs({as: "a"})`
+`
+
 export default () => {
   // useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)
   const [sliderRef, setSliderRef] = useState(null);
@@ -107,25 +112,25 @@ export default () => {
          imageSrc: farmerimage ,
          title: "Farmer",
          description: "Self-Sovereign Identity (SSI) in agriculture empowers farmers with control over their data, enabling transparent supply chains, facilitating access to financial services, and streamlining agreements through secure, decentralized digital identities. This ensures a more resilient and efficient ecosystem for farmers in the modern agricultural landscape.",
-         link: "/usecases/farmer"
+         link: "/falcon-id/usecases/farmer"
     },
     {
         imageSrc: eduimage,
          title: "Education",
          description: "In the realm of higher education, Self-Sovereign Identity (SSI) empowers students with data ownership, fostering transparent academic credentialing, facilitating secure access to services, and streamlining agreements through decentralized digital identities. This enhances trust, data privacy, and efficiency within the dynamic landscape of educational institutions.",
-         link: "/usecases/education"
+         link: "/falcon-id/usecases/education"
     },
     {
         imageSrc: travelimage,
          title: "Travel and Hospitality",
          description: "Self-Sovereign Identity (SSI) transforms travel and hospitality by offering secure digital credentials for seamless check-ins, document authenticity, and personalized loyalty programs. It streamlines transactions, enhances travel insurance processes, and prioritizes data privacy. The result is a more secure, efficient, and personalized experience for both travelers and service providers.",
-         link: "/usecases/travel"
+         link: "/falcon-id/usecases/travel"
     },
     {
         imageSrc: citizenusecase,
          title: "Government",
          description: "In civic contexts, Self-Sovereign Identity (SSI) empowers citizens by providing them control over their personal data, enhancing privacy, and enabling secure interactions with government services. This decentralized identity model fosters trust, transparency, and individual autonomy in the digital landscape of citizen-government interactions.",
-         link: "/usecases/education"
+         link: "/falcon-id/usecases/education"
     },
   ]
 
@@ -151,7 +156,8 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton><a href={card.link}>Know More</a></PrimaryButton>
+              <Link href={card.link}>Know More</Link>
+              {/* <PrimaryButton><a href={card.link}>Know More</a></PrimaryButton> */}
             </Card>
           ))}
         </CardSlider>

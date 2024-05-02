@@ -145,26 +145,26 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/falcon-id" element={<Home/>} />
-          <Route path="/trydemo" element={<Trydemocontacts/>} />
-          <Route path="/technology" element={<Technology/>} /> 
+          <Route path="/falcon-id/trydemo" element={<Trydemocontacts/>} />
+          <Route path="/falcon-id/technology" element={<Technology/>} /> 
           {/* usecases */}
-          <Route path="/usecases" element={<Usecases />}/>
-          <Route path="/usecases/government" element={<InsideGovernmentUsecase/>} />
-          <Route path="/usecases/education" element={<EducationUsecase/>} />
-          <Route path="/usecases/farmer" element={<FarmerUsecase/>} />
-          <Route path="/usecases/travel" element={<TravelUsecases/>} />
+          <Route path="/falcon-id/usecases" element={<Usecases />}/>
+          <Route path="/falcon-id/usecases/government" element={<InsideGovernmentUsecase/>} />
+          <Route path="/falcon-id/usecases/education" element={<EducationUsecase/>} />
+          <Route path="/falcon-id/usecases/farmer" element={<FarmerUsecase/>} />
+          <Route path="/falcon-id/usecases/travel" element={<TravelUsecases/>} />
           {/* end of usecases */}
           {/* blogs */}
-          <Route path="/blogs" element={<Blogsgrid/>} />
-          <Route path="/blogs/did" element={<Blogdid/>} />
-          <Route path="/blogs/vc" element={<Blogvc/>} />
-          <Route path="/blogs/ssi" element={<Blogssi/>} />
-          <Route path="/blogs/gov" element={<BlogGov/>} />
-          <Route path="/blogs/edu" element={<Blogdid/>} />
-          <Route path="/blogs/travel" element={<Blogdid/>} />
-          <Route path="/blogs/farmer" element={<Blogdid/>} />
+          <Route path="/falcon-id/blogs" element={<Blogsgrid/>} />
+          <Route path="/falcon-id/blogs/did" element={<Blogdid/>} />
+          <Route path="/falcon-id/blogs/vc" element={<Blogvc/>} />
+          <Route path="/falcon-id/blogs/ssi" element={<Blogssi/>} />
+          <Route path="/falcon-id/blogs/gov" element={<BlogGov/>} />
+          <Route path="/falcon-id/blogs/edu" element={<Blogdid/>} />
+          <Route path="/falcon-id/blogs/travel" element={<Blogdid/>} />
+          <Route path="/falcon-id/blogs/farmer" element={<Blogdid/>} />
           {/* end of blogs */}
-          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/falcon-id/contactus" element={<Contactus />} />
         </Routes>
       </Router>
       {/* <div>

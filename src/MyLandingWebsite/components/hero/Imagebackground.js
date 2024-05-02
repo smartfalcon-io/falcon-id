@@ -40,7 +40,7 @@ export default () => {
               <br />
               Decentralized Identity.
           </Heading>
-          <PrimaryAction><NavLink href="/trydemo">Try Demo</NavLink></PrimaryAction>
+          <PrimaryAction><NavLink href="/falcon-id/trydemo">Try Demo</NavLink></PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>

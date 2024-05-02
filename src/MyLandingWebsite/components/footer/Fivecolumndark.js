@@ -71,16 +71,16 @@ export default () => {
             <ColumnHeading>Quick Links</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="/blogs">Blog</Link>
+                <Link href="/falcon-id/blogs">Blog</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/usecases">Usecases</Link>
+                <Link href="/falcon-id/usecases">Usecases</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/contactus">Support</Link>
+                <Link href="/falcon-id/contactus">Support</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/technology">About Us</Link>
+                <Link href="/falcon-id/technology">About Us</Link>
               </LinkListItem>
             </LinkList>
           </Column>
