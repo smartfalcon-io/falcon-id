@@ -144,7 +144,7 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="https://smartfalcon-io.github.io/falcon-id" >
+          <Route path="/falcon-id" >
             {/* Default route */}
             <Route index element={<Home />} />
 
