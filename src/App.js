@@ -144,32 +144,34 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/falcon-id" element={<Home/>} />
-          <Route path="/falcon-id/trydemo" element={<Trydemocontacts/>} />
-          <Route path="/falcon-id/technology" element={<Technology/>} /> 
-          {/* usecases */}
-          <Route path="/falcon-id/usecases" element={<Usecases />}/>
-          <Route path="/falcon-id/usecases/government" element={<InsideGovernmentUsecase/>} />
-          <Route path="/falcon-id/usecases/education" element={<EducationUsecase/>} />
-          <Route path="/falcon-id/usecases/farmer" element={<FarmerUsecase/>} />
-          <Route path="/falcon-id/usecases/travel" element={<TravelUsecases/>} />
-          {/* end of usecases */}
-          {/* blogs */}
-          <Route path="/falcon-id/blogs" element={<Blogsgrid/>} />
-          <Route path="/falcon-id/blogs/did" element={<Blogdid/>} />
-          <Route path="/falcon-id/blogs/vc" element={<Blogvc/>} />
-          <Route path="/falcon-id/blogs/ssi" element={<Blogssi/>} />
-          <Route path="/falcon-id/blogs/gov" element={<BlogGov/>} />
-          <Route path="/falcon-id/blogs/edu" element={<Blogdid/>} />
-          <Route path="/falcon-id/blogs/travel" element={<Blogdid/>} />
-          <Route path="/falcon-id/blogs/farmer" element={<Blogdid/>} />
-          {/* end of blogs */}
-          <Route path="/falcon-id/contactus" element={<Contactus />} />
+          <Route path="/falcon-id" >
+            {/* Default route */}
+            <Route index element={<Home />} />
+
+            {/* Nested routes */}
+            <Route path="technology" element={<Technology />} />
+            <Route path="trydemo" element={<Trydemocontacts />} />
+            <Route path="usecases" >
+              <Route index element={<Usecases />} />
+              <Route path="government" element={<InsideGovernmentUsecase />} />
+              <Route path="education" element={<EducationUsecase />} />
+              <Route path="farmer" element={<FarmerUsecase />} />
+              <Route path="travel" element={<TravelUsecases />} />
+            </Route>
+            <Route path="blogs" >
+              <Route index element={<Blogsgrid />} />
+              <Route path="did" element={<Blogdid />} />
+              <Route path="vc" element={<Blogvc />} />
+              <Route path="ssi" element={<Blogssi />} />
+              <Route path="gov" element={<BlogGov />} />
+              {/* <Route path="edu" element={<Blogdid />} />
+        <Route path="travel" element={<Blogdid />} />
+        <Route path="farmer" element={<Blogdid />} /> */}
+            </Route>
+            <Route path="contactus" element={<Contactus />} />
+          </Route>
         </Routes>
       </Router>
-      {/* <div>
-        <Blogdid/>
-      </div> */}
     </>
   );
 }
