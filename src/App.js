@@ -144,7 +144,7 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/falcon-id" >
+          <Route path="/" >
             {/* Default route */}
             <Route index element={<Home />} />
 

@@ -2,7 +2,7 @@
   "name": "falconid",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://smartfalcon-io.github.io/falcon-id",
+  "homepage": "https://did.smartfalcon.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^13.4.0",
