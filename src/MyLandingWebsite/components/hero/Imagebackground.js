@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { NavLink } from "../header/BasicHeader";
+import { NavLink} from "../header/BasicHeader";
 import MainHeader from "../header/MainHeader";
 
 const Container = styled.div`
@@ -24,7 +24,8 @@ const Heading = styled.h1`
 
 
 const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
-
+const Link = styled(PrimaryAction).attrs({as: "a"})`
+`
 
 export default () => {
 
@@ -40,7 +41,7 @@ export default () => {
               <br />
               Decentralized Identity.
           </Heading>
-          <PrimaryAction><NavLink href="/falcon-id/trydemo">Try Demo</NavLink></PrimaryAction>
+          <Link href="/trydemo">Try Demo</Link>
         </Content>
       </HeroContainer>
     </Container>

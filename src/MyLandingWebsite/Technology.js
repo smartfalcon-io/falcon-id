@@ -21,7 +21,7 @@ const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
 
   useEffect(() =>{
-    ReactGA.send({ hitType: "pageview", page: "/falcon-id/technology", title: "Technology Page" })
+    ReactGA.send({ hitType: "pageview", page: "/technology", title: "Technology Page" })
   },[]);
   return (
     <AnimationRevealPage>

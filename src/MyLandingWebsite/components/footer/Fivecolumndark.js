@@ -55,7 +55,7 @@ export default () => {
             Raidurgam panmaktha,
             Hyderabad, Telangana - 500 081
             </CompanyAddress>
-            <SocialLinksContainer>
+            {/* <SocialLinksContainer>
               <SocialLink href="https://facebook.com">
                 <FacebookIcon />
               </SocialLink>
@@ -65,22 +65,22 @@ export default () => {
               <SocialLink href="https://youtube.com">
                 <YoutubeIcon />
               </SocialLink>
-            </SocialLinksContainer>
+            </SocialLinksContainer> */}
           </CompanyColumn>
           <Column>
             <ColumnHeading>Quick Links</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="/falcon-id/blogs">Blog</Link>
+                <Link href="/blogs">Blog</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/falcon-id/usecases">Usecases</Link>
+                <Link href="/usecases">Usecases</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/falcon-id/contactus">Support</Link>
+                <Link href="/contactus">Support</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/falcon-id/technology">About Us</Link>
+                <Link href="/technology">About Us</Link>
               </LinkListItem>
             </LinkList>
           </Column>

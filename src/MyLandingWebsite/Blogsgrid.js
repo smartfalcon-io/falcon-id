@@ -70,7 +70,7 @@ export default ({
       title: "Empowering Governance: A Deep Dive into the Transformative Realm of Self-Sovereign Identity (SSI)",
       description:
         " In a world where identity is at the crossroads of technology and governance, the advent of Self-Sovereign Identity (SSI) and its inherent principle of decentralized governance promises a paradigm shift.",
-      url: "/falcon-id/blogs/gov",
+      url: "/blogs/gov",
       featured: true
     },{
       imageSrc:"https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2Fssi.png",
@@ -79,7 +79,7 @@ export default ({
       title: "Unveiling the Future: Understanding Self-Sovereign Identity (SSI)",
       description:
         "In today's digital age, our online presence is like a treasure chest of personal information. But how do we keep this treasure safe? Enter Decentralized Identity (DID) – a superhero in the world of digital identity management. In this guide, we're going to explore what DID is, why it matters for everyone, and how it's changing the game in our online adventures.",
-      url: "/falcon-id/blogs/ssi",
+      url: "/blogs/ssi",
       featured: false
     },{
       imageSrc:"https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2Fdid.png",
@@ -88,7 +88,7 @@ export default ({
       title: "Decentralized Identity (DID): A Blockchain Powered Digital Identity",
       description:
         "In today's digital age, our online presence is like a treasure chest of personal information. But how do we keep this treasure safe? Enter Decentralized Identity (DID) – a superhero in the world of digital identity management. In this guide, we're going to explore what DID is, why it matters for everyone, and how it's changing the game in our online adventures.",
-      url: "/falcon-id/blogs/did",
+      url: "/blogs/did",
       featured: false
     },{
       imageSrc:"https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2Fvc.png",
@@ -97,7 +97,7 @@ export default ({
       title: "Revolutionizing Digital Identity: An In-Depth Exploration of Verifiable Credentials",
       description:
         "In today's digital age, our online presence is like a treasure chest of personal information. But how do we keep this treasure safe? Enter Decentralized Identity (DID) – a superhero in the world of digital identity management. In this guide, we're going to explore what DID is, why it matters for everyone, and how it's changing the game in our online adventures.",
-      url: "/falcon-id/blogs/vc",
+      url: "/blogs/vc",
       featured: false
     }]
   
@@ -111,7 +111,7 @@ export default ({
   const [error, setError] = useState(null);
 
   useEffect(() =>{
-    ReactGA.send({ hitType: "pageview", page: "/falcon-id/blogs", title: "Blogs Page" })
+    ReactGA.send({ hitType: "pageview", page: "/blogs", title: "Blogs Page" })
   },[]);
 
 

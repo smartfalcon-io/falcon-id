@@ -59,7 +59,7 @@ export default ({
       category: "Information",
       title: "Empowering Governance: A Deep Dive into the Transformative Realm of Self-Sovereign Identity (SSI)",
       description: " In a world where identity is at the crossroads of technology and governance, the advent of Self-Sovereign Identity (SSI) and its inherent principle of decentralized governance promises a paradigm shift.",
-      url: "/falcon-id/blogs/gov"
+      url: "/blogs/gov"
     },
     {
       imageSrc:
@@ -67,7 +67,7 @@ export default ({
       category: "Technology",
       title: "Unveiling the Future: Understanding Self-Sovereign Identity (SSI)",
       description: "Self-Sovereign Identity (SSI), a cutting-edge concept reshaping the very foundations of digital identity. At its core lies the revolutionary idea of decentralization.",
-      url: "/falcon-id/blogs/ssi"
+      url: "/blogs/ssi"
     },
     {
       imageSrc:
@@ -75,7 +75,7 @@ export default ({
       category: "Technology",
       title: "Decentralized Identity (DID): A Blockchain Powered Digital Identity",
       description: "DID represents a departure from the conventional, centralized identity systems that have long been the norm. Rather than entrusting our personal data to centralized authorities.",
-      url: "/falcon-id/blogs/did"
+      url: "/blogs/did"
     }
   ];
   return (
@@ -111,8 +111,8 @@ export default ({
           ))}
         </ThreeColumn>
       </Content>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
+      {/* <DecoratorBlob1 />
+      <DecoratorBlob2 /> */}
     </Container>
   );
 };

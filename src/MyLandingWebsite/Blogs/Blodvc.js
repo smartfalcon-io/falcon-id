@@ -24,7 +24,7 @@ const custom={
       {
         beforelink:"In contrast to traditional identification methods, Verifiable Credentials empower individuals by providing a secure and verifiable means of presenting information. Think of them as the digital counterparts to traditional passports, but with a crucial distinction—they are not controlled by centralized authorities. Instead, VCs grant individuals unprecedented ownership and control over their credentials, ushering in a new era of ",  
         linkword:"decentralized identity",
-        link:"/falcon-id/blogs/did",
+        link:"/blogs/did",
         afterlink:"."
         },
       "The transformative power of Verifiable Credentials lies in their ability to offer a secure and tamper-evident way of presenting and confirming information. This digital evolution represents a departure from the limitations of physical documents, providing a dynamic and secure solution for the challenges of modern identity management."

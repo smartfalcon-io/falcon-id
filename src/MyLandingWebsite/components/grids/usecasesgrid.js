@@ -112,25 +112,25 @@ export default () => {
          imageSrc: farmerimage ,
          title: "Farmer",
          description: "Self-Sovereign Identity (SSI) in agriculture empowers farmers with control over their data, enabling transparent supply chains, facilitating access to financial services, and streamlining agreements through secure, decentralized digital identities. This ensures a more resilient and efficient ecosystem for farmers in the modern agricultural landscape.",
-         link: "/falcon-id/usecases/farmer"
+         link: "/usecases/farmer"
     },
     {
         imageSrc: eduimage,
          title: "Education",
          description: "In the realm of higher education, Self-Sovereign Identity (SSI) empowers students with data ownership, fostering transparent academic credentialing, facilitating secure access to services, and streamlining agreements through decentralized digital identities. This enhances trust, data privacy, and efficiency within the dynamic landscape of educational institutions.",
-         link: "/falcon-id/usecases/education"
+         link: "/usecases/education"
     },
     {
         imageSrc: travelimage,
          title: "Travel and Hospitality",
          description: "Self-Sovereign Identity (SSI) transforms travel and hospitality by offering secure digital credentials for seamless check-ins, document authenticity, and personalized loyalty programs. It streamlines transactions, enhances travel insurance processes, and prioritizes data privacy. The result is a more secure, efficient, and personalized experience for both travelers and service providers.",
-         link: "/falcon-id/usecases/travel"
+         link: "/usecases/travel"
     },
     {
         imageSrc: citizenusecase,
          title: "Government",
          description: "In civic contexts, Self-Sovereign Identity (SSI) empowers citizens by providing them control over their personal data, enhancing privacy, and enabling secure interactions with government services. This decentralized identity model fosters trust, transparency, and individual autonomy in the digital landscape of citizen-government interactions.",
-         link: "/falcon-id/usecases/education"
+         link: "/usecases/education"
     },
   ]
 

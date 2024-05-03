@@ -22,7 +22,7 @@ const Mainheader = tw(Header)`bg-black`
 
 export default () => {
   useEffect(() =>{
-    ReactGA.send({ hitType: "pageview", page: "/falcon-id/contactus", title: "ContactUs Page" })
+    ReactGA.send({ hitType: "pageview", page: "/contactus", title: "ContactUs Page" })
   },[]);
   return (
     <AnimationRevealPage>

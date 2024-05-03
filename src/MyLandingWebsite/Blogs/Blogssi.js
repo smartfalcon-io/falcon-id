@@ -24,7 +24,7 @@ const custom={
       {
         beforelink:" ",  
         linkword:"Decentralized Identifiers (DIDs)",
-        link:"/falcon-id/blogs/did",
+        link:"/blogs/did",
         afterlink:" are the linchpin of SSI, providing users with unique, secure, and self-owned identifiers. This section will delve deeper into the fundamental aspects of SSI, elucidating how it empowers individuals to take control of their digital identities and move away from centralized models that pose inherent risks."
         },
       "Self-Sovereign Identity not only introduces a technological upgrade but a philosophical shift. It recognizes that in the digital age, individuals should be the rightful owners of their identity information. SSI operates on the premise that users should have the ability to manage, control, and selectively share their personal data, fostering a more transparent and user-centric digital landscape.",
@@ -35,14 +35,14 @@ const custom={
       {
         beforelink:"Beyond its conceptual underpinnings, SSI brings a plethora of tangible benefits to individuals navigating the digital space. Central to this is the concept of ",  
         linkword:"Verifiable Credentials (VC)",
-        link:"/falcon-id/blogs/vc",
+        link:"/blogs/vc",
         afterlink:"."
         },
       "Imagine a world where individuals can present proof of their identity or qualifications without divulging unnecessary information. This not only enhances privacy but streamlines interactions, reducing the friction associated with repeatedly sharing sensitive information. Additionally, SSI addresses the concerns of centralized identity storage by minimizing the dependence on monolithic databases, thereby mitigating the risks associated with data breaches.",
       {
         beforelink:"The ",  
         linkword:"user-centric advantages",
-        link:"/falcon-id/blogs/gov",
+        link:"/blogs/gov",
         afterlink:" of SSI extend further. With individuals being the custodians of their identity information, there is a fundamental shift in the power dynamic. Users are no longer subject to the whims of centralized authorities but rather are active participants in their digital interactions. "
         },
         "This empowerment not only instills a sense of confidence but also establishes a more resilient and user-friendly digital identity ecosystem. As we explore the benefits in this section, it becomes evident that SSI is not merely a technological upgrade; it's a catalyst for a more secure, efficient, and user-focused digital identity experience."

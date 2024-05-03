@@ -23,24 +23,24 @@ const Container = styled.div`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/falcon-id">
+      <NavLink href="/">
         Home
       </NavLink>
-      <NavLink href="/falcon-id/technology">
+      <NavLink href="/technology">
         Technology
       </NavLink>
-      <NavLink href="/falcon-id/blogs">
+      <NavLink href="/blogs">
         Blogs
       </NavLink>
-      <NavLink href="/falcon-id/usecases">
+      <NavLink href="/usecases">
         Usecases
       </NavLink>
-      <NavLink href="/falcon-id/contactus">
+      <NavLink href="/contactus">
         ContactUs
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/falcon-id/trydemo">
+      <PrimaryLink href="/trydemo">
         Try Demo
       </PrimaryLink>
     </NavLinks>
