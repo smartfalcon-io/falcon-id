@@ -88,15 +88,12 @@ const custom={
     subhead5:"Embracing the Future of Higher Education",
     desc5:[
         {
-            beforelink:"As higher education institutions navigate the complexities of the digital landscape, decentralized identity emerges as a beacon of hope. By embracing SSI and leveraging",  
+            beforelink:"As higher education institutions navigate the complexities of the digital landscape, decentralized identity emerges as a beacon of hope. By embracing SSI and leveraging ",  
             linkword:"verifiable credentials,",
             link:"/blogs/vc",
             afterlink:" universities can enhance security, streamline operations, and foster a culture of trust and innovation.Let's delve deeper into how decentralized identity helps facilitate verification during migration and other crucial stages of higher education."
                     },
-                    {
-                        insidesubhead:"Transitioning to Life Beyond Studying",
-                        desc: "Migration is a significant transition period for students, whether they are moving between educational institutions or entering the workforce. Decentralized identity solutions streamline the verification process, ensuring that students' credentials are recognized and authenticated seamlessly.",
-                    },
+                    "Migration is a significant transition period for students, whether they are moving between educational institutions or entering the workforce. Decentralized identity solutions streamline the verification process, ensuring that students' credentials are recognized and authenticated seamlessly.",
                     {
                         secondsubhead: "Seamless Transfer of Credentials",
                         desc:"With SSI, students can securely carry their academic credentials across borders and institutions, eliminating the need for cumbersome paperwork and manual verification processes. Whether transferring to a new university or seeking employment abroad, students can present their verifiable credentials with confidence, knowing that their identity and qualifications are authenticated instantly."
