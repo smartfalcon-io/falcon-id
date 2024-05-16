@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2a70a18c.css",
-    "main.js": "/static/js/main.cb03b8d9.js",
+    "main.js": "/static/js/main.562930f3.js",
     "static/media/did.png": "/static/media/did.e0d79e4eab6827853ca5.png",
     "static/media/farmerusecase.png": "/static/media/farmerusecase.fa2038938c42c69cdfdd.png",
     "static/media/travelandhospitality.png": "/static/media/travelandhospitality.8804974ead6161b79d42.png",
@@ -17,6 +17,7 @@
     "static/media/6.svg": "/static/media/6.17c27045597d90cacdf0f8beaa8524ac.svg",
     "static/media/2.svg": "/static/media/2.0ff282aa11ce6a6b3649e1919b4ede32.svg",
     "static/media/gov.svg": "/static/media/gov.9e9a2663ac4b129a3d1ebeaf02ca16d7.svg",
+    "static/media/university.svg": "/static/media/university.26fe7d264ea1d9330dba088b9847c3c4.svg",
     "static/media/Schedule-illustration.svg": "/static/media/Schedule-illustration.5710f5c20906d7525481b9d2a250cc62.svg",
     "static/media/7.svg": "/static/media/7.f0e50ecf3606b4a03fcb13b5bb61b55e.svg",
     "static/media/vc.svg": "/static/media/vc.99ff986334e07562160fcfe39943ca3b.svg",
@@ -56,10 +57,10 @@
     "static/media/fast-icon.svg": "/static/media/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg",
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.8f6512c4ee4f21763666f0f3b69d970d.svg",
     "main.2a70a18c.css.map": "/static/css/main.2a70a18c.css.map",
-    "main.cb03b8d9.js.map": "/static/js/main.cb03b8d9.js.map"
+    "main.562930f3.js.map": "/static/js/main.562930f3.js.map"
   },
   "entrypoints": [
     "static/css/main.2a70a18c.css",
-    "static/js/main.cb03b8d9.js"
+    "static/js/main.562930f3.js"
   ]
 }
