@@ -72,7 +72,18 @@ export default ({
         " In a world where identity is at the crossroads of technology and governance, the advent of Self-Sovereign Identity (SSI) and its inherent principle of decentralized governance promises a paradigm shift.",
       url: "/blogs/gov",
       featured: true
-    },{
+    },
+    {
+      imageSrc:"https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2FBlogs%2Funiversity-education.png",
+      category: "Information",
+      date: "Feb 16, 2024",
+      title: "Decentralized Identity: Revolutionizing Higher Education",
+      description:
+        "Discover how decentralized identity transforms higher education verification, enhancing security and accessibility for students and institutions alike.",
+      url: "/blogs/university",
+      featured: false
+    },
+    {
       imageSrc:"https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2Fssi.png",
       category: "Technology",
       date: "Dec 24, 2023",
@@ -99,7 +110,8 @@ export default ({
         "In today's digital age, our online presence is like a treasure chest of personal information. But how do we keep this treasure safe? Enter Decentralized Identity (DID) – a superhero in the world of digital identity management. In this guide, we're going to explore what DID is, why it matters for everyone, and how it's changing the game in our online adventures.",
       url: "/blogs/vc",
       featured: false
-    }]
+    }
+  ]
   
 }) => {
   const [visible, setVisible] = useState(7);
