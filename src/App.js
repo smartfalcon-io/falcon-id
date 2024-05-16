@@ -131,6 +131,9 @@ import Blogdid from "MyLandingWebsite/Blogs/Blogdid";
 import Blogvc from "MyLandingWebsite/Blogs/Blodvc";
 import BlogGov from "MyLandingWebsite/Blogs/BlogGovernment";
 import Blogssi from "MyLandingWebsite/Blogs/Blogssi";
+import Blogunv from "MyLandingWebsite/Blogs/Bloguniversity";
+
+import Bloghero from "MyLandingWebsite/components/blog/Bloghero";
 
 
 import ReactGA from "react-ga4";
@@ -164,11 +167,13 @@ export default function App() {
               <Route path="vc" element={<Blogvc />} />
               <Route path="ssi" element={<Blogssi />} />
               <Route path="gov" element={<BlogGov />} />
+              <Route path="university" element={<Blogunv />} />
               {/* <Route path="edu" element={<Blogdid />} />
         <Route path="travel" element={<Blogdid />} />
         <Route path="farmer" element={<Blogdid />} /> */}
             </Route>
             <Route path="contactus" element={<Contactus />} />
+            {/* <Route path="bloghero" element={<Bloghero />} /> */}
           </Route>
         </Routes>
       </Router>
