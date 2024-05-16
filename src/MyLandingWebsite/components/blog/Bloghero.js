@@ -39,7 +39,41 @@ const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:t
 
 const TextSubHeading = tw(
   SectionHeading
+)`mt-4 text-center md:text-left text-lg md:text-xl lg:text-2xl font-extrabold leading-relaxed text-black`;
+
+const SecondSubHeading = tw(
+  SectionHeading
+)`mt-4 text-center md:text-left text-base md:text-lg lg:text-xl font-bold leading-relaxed text-black`;
+
+const ThirdSubHeading = tw(
+  SectionHeading
 )`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-black`;
+
+// hairline: '100',
+// thin: '200',
+// light: '300',
+// normal: '400',
+// medium: '500',
+// semibold: '600',
+// bold: '700',
+// extrabold: '800',
+// black: '900',
+
+
+// none: '1',
+// tight: '1.25',
+// snug: '1.375',
+// normal: '1.5',
+// relaxed: '1.625',
+// loose: '2',
+// '3': '.75rem',
+// '4': '1rem',
+// '5': '1.25rem',
+// '6': '1.5rem',
+// '7': '1.75rem',
+// '8': '2rem',
+// '9': '2.25rem',
+// '10': '2.5rem',
 
 const Link = tw.a`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-primary-100 underline`
 
@@ -61,7 +95,19 @@ export default ({
     subhead1: "subheading 1",
     desc1: [
       "para1",
-      "para2"
+      "para2",
+      {
+        insidesubhead: "inside subhead",
+        secondsubhead:"second sub heading",
+        thirdsubhead: "same as text",
+        desc: "description"
+      },
+      {
+      beforelink:"text before link ",  
+      linkword:"link name",
+      link:"link href",
+      afterlink:"text after link"
+      }
     ],
     subhead2:"subheading 2",
     desc2:[
@@ -93,6 +139,12 @@ export default ({
       "para1",
       "para2",
       {
+        insidesubhead: "inside subhead",
+        secondsubhead:"second sub heading",
+        thirdsubhead: "same as text",
+        desc: "description"
+      },
+      {
       beforelink:"text before link ",  
       linkword:"link name",
       link:"link href",
@@ -113,16 +165,18 @@ export default ({
       <ContextContainer>
         <TextContent>
           <TextHeading>{dynamic.subhead1}</TextHeading>
-          {dynamic.desc1.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>)}</>):(<><p>{paragraphs}</p></>)} </Description>))}
+          {/* {dynamic.desc1.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>)}</>):(<><p>{paragraphs}</p></>)} </Description>))} */}
+          {/* {dynamic.desc1.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>) ||(<><p><TextSubHeading>{paragraphs.insidesubhead}</TextSubHeading>{paragraphs.desc}</p></>) }</>):(<><p>{paragraphs}</p></>)} </Description>))} */}
+          {/* {dynamic.desc1.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>) ||(<><p><SecondSubHeading>{paragraphs.insidesubhead}</SecondSubHeading><p><ThirdSubHeading>{paragraphs.secondsubhead}</ThirdSubHeading></p>{paragraphs.desc}</p></>) }</>):(<><p>{paragraphs}</p></>)} </Description>))} */}
+          {dynamic.desc1.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>) ||(<><p><TextSubHeading>{paragraphs.insidesubhead}</TextSubHeading><SecondSubHeading>{paragraphs.secondsubhead}</SecondSubHeading><p><ThirdSubHeading>{paragraphs.thirdsubhead}</ThirdSubHeading></p>{paragraphs.desc}</p></>) }</>):(<><p>{paragraphs}</p></>)} </Description>))}
           <TextHeading>{dynamic.subhead2}</TextHeading>
-          {dynamic.desc2.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>)}</>):(<><p>{paragraphs}</p></>)} </Description>))}
+          {dynamic.desc2.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>) ||(<><p><TextSubHeading>{paragraphs.insidesubhead}</TextSubHeading><SecondSubHeading>{paragraphs.secondsubhead}</SecondSubHeading><p><ThirdSubHeading>{paragraphs.thirdsubhead}</ThirdSubHeading></p>{paragraphs.desc}</p></>) }</>):(<><p>{paragraphs}</p></>)} </Description>))}
           <TextHeading>{dynamic.subhead3}</TextHeading>
-          {dynamic.desc3.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>)}</>):(<><p>{paragraphs}</p></>)} </Description>))}
+          {dynamic.desc3.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>) ||(<><p><TextSubHeading>{paragraphs.insidesubhead}</TextSubHeading><SecondSubHeading>{paragraphs.secondsubhead}</SecondSubHeading><p><ThirdSubHeading>{paragraphs.thirdsubhead}</ThirdSubHeading></p>{paragraphs.desc}</p></>) }</>):(<><p>{paragraphs}</p></>)} </Description>))}
           <TextHeading>{dynamic.subhead4}</TextHeading>
-          {dynamic.desc4.map((faq,index)=>(<Description key={index}><TextSubHeading>{faq.q}</TextSubHeading>{faq.a}</Description>))}
+          {dynamic.desc4.map((faq,index)=>(<Description key={index}><SecondSubHeading>{faq.q}</SecondSubHeading>{faq.a}</Description>))}
           <TextHeading>{dynamic.subhead5}</TextHeading>
-          {/* {dynamic.desc5.map((paragraph,index)=>(<Description key={index}>{paragraph}</Description>))} */}
-          {dynamic.desc5.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>)}</>):(<><p>{paragraphs}</p></>)} </Description>))}
+          {dynamic.desc5.map((paragraphs,index)=>(<Description key={index}>{typeof paragraphs === 'object' ? (<>{paragraphs.afterlink && paragraphs.beforelink && paragraphs.link && paragraphs.linkword &&(<p>{paragraphs.beforelink}<Link href={paragraphs.link}>{paragraphs.linkword}</Link>{paragraphs.afterlink}</p>) ||(<><p><TextSubHeading>{paragraphs.insidesubhead}</TextSubHeading><SecondSubHeading>{paragraphs.secondsubhead}</SecondSubHeading><p><ThirdSubHeading>{paragraphs.thirdsubhead}</ThirdSubHeading></p>{paragraphs.desc}</p></>) }</>):(<><p>{paragraphs}</p></>)} </Description>))}
         </TextContent>
       </ContextContainer>
     </Container>
