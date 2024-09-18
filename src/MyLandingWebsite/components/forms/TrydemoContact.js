@@ -55,7 +55,7 @@ export default ({
   formAction = "https://ssidemo.smartfalcon.io/",
   formMethod = "get",
   textOnLeft = true,
-  hubspotformid = "",
+  hubspotformid = "f45d2a3f-b106-41ea-ab40-28926be1590c",
   videourl="https://axanljry1b0i.objectstorage.ap-hyderabad-1.oci.customer-oci.com/n/axanljry1b0i/b/ssi-demo/o/LandingWedsite%2FWebsite%2Ffarmer_usecase.mp4"
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.

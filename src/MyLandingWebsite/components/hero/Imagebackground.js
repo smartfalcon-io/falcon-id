@@ -41,7 +41,7 @@ export default () => {
               <br />
               Decentralized Identity.
           </Heading>
-          <Link href="/trydemo">Try Demo</Link>
+          {/* <Link href="/trydemo">Try Demo</Link> */}
         </Content>
       </HeroContainer>
     </Container>

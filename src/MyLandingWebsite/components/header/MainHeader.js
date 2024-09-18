@@ -40,9 +40,9 @@ export default () => {
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/trydemo">
-        Try Demo
-      </PrimaryLink>
+      {/* <PrimaryLink href="/trydemo"> */}
+      {/*   Try Demo */}
+      {/* </PrimaryLink> */}
     </NavLinks>
   ];
 
